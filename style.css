@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+:root {
+    /* Fonts */
+    --font-size: 0.938rem;
+
+    --fw-light: 400;
+    --fw-mid: 500;
+    --fw-bold: 700;
+
+    --font-style: 'League Spartan';
+    /* Colors */
+    --clr-primary-darkmagenta: hsl(300, 43%, 22%);
+    --clr-primary-softpink: hsl(333, 80%, 67%);
+    
+    --clr-neutral-darkgreymagenta:  hsl(302, 25%, 53%);
+    --clr-neutral-lightgreymagenta: hsl(300, 24%, 96%);
+    --clr-neutral-white: white;
+}
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /* 8. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+html, body {
+    height: 100%;
+    text-align: center;
+    padding: 10rem auto;
+
+}
