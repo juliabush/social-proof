@@ -67,6 +67,18 @@
 html, body {
     height: 100%;
     text-align: center;
-    padding: 10rem auto;
-
+    font-size: var(--font-size);
+    font-family: var(--font-style);
+}
+.social-proof__main-heading {
+    color: var(--clr-primary-darkmagenta);
+    font-size: 2rem;
+}
+.social-proof__main-description {
+    color: var(--clr-primary-darkmagenta);
+}
+.social-proof__star-ratings {
+    list-style-type: none;
+    color: var(--clr-primary-darkmagenta);
+    font-weight: var(--fw-bold);
 }
