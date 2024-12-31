@@ -72,7 +72,7 @@ html {
     background-size: contain;
     background-repeat: no-repeat;
 }
-article {
+article{
   margin-left: 1rem;
   margin-right: 1rem;
   margin-top: 4rem;
@@ -146,4 +146,69 @@ img {
 }
 .user-reviews__status {
   color: var(--clr-primary-softpink);
+}
+@media (min-width:1000px) {
+  html {
+    background-image: url(images/bg-pattern-top-desktop.svg);
+  }
+  article {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+  .social-proof__user-reviews {
+    display: flex;
+  }
+  .social-proof__star-ratings li {
+    width: 400px;
+    display: inline-block;
+    padding: 0.875rem;
+    &::before {
+      content: '';
+       width: 100px;
+       height: 1rem;
+       vertical-align: middle;
+       margin-right: 1.5rem;
+       display: inline-block;
+       background-image: url(images/icon-star.svg);
+       margin-bottom: 0.5rem;
+       background-repeat: space;
+     }
+  }
+  .move-1 {
+    position: relative;
+    left: 3rem;
+  }
+  .move-2 {
+    position: relative;
+    left: 6rem;
+  }
+  .shadow {
+    box-shadow: 0px 0px 4px 1px rgba(177, 119, 177, 0.301);
+  }
+  .desktop-design__flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+  }
+  .desktop-design__main-flexbox {
+    max-width: 500px;
+    text-align: start;
+  }
+  .social-proof__main-heading {
+    margin: 1rem;
+    font-size: 3rem;
+    width: 300px;
+  }
+  .social-proof__main-description {
+    margin-left: 1rem;
+  }
+  .relative {
+    position: relative;
+    top: 1rem;
+  }
+  .relative-2 {
+    position: relative;
+    top: 2rem;
+  }
 }
